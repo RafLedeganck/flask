@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<form action="" method="post" class="row g-4" novalidate>
+    {{ form.hidden_tag() }}
+
+    <div class="col-lg-8">
+        {{ form.longitude.label() }}
+        {{ form.longitude }}
+    </div>
+    <div class="col-lg-8">
+        {{ form.latitude.label() }}
+        {{ form.latitude }}
+    </div>
+    <div class="col-lg-8">
+        {{ form.housing_median_age.label() }}
+        {{ form.housing_median_age }}
+    </div>
+    <div class="col-lg-8">
+        {{ form.total_rooms.label() }}
+        {{ form.total_rooms }}
+    </div>
+    <div class="col-lg-8">
+        {{ form.total_bedrooms.label() }}
+        {{ form.total_bedrooms }}
+    </div>
+    <div class="col-lg-8">
+        {{ form.population.label() }}
+        {{ form.population }}
+    </div>
+    <div class="col-lg-8">
+        {{ form.households.label() }}
+        {{ form.households }}
+    </div>
+    <div class="col-lg-8">
+        {{ form.median_income.label() }}
+        {{ form.median_income }}
+    </div>
+    <div class="col-lg-8">
+        {{ form.median_house_value.label() }}
+        {{ form.median_house_value }}
+    </div>
+    <div class="col-lg-8">
+        {{ form.ocean_proximity.label() }}
+        {{ form.ocean_proximity }}
+    </div>
+    <div class="col-lg-8">
+        {{ form.submit }}
+    </div>
+
+<a href="{{ url_for=(house_insert) }}" class="btn btn_warning" role="button" aria-disabled="true">Add another house</a>
+
+</form>
+
+{{ }}
+
+{% endblock %}

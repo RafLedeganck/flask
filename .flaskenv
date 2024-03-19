@@ -1,0 +1,2 @@
+FLASK_APP=miniproject
+FLASK_DEBUG=True
